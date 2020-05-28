@@ -2,12 +2,12 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import Logo from "./logo"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     sx={{
-      bg: 'primary',
-      color: 'background',
+      bg: 'background',
       mb: 4,
     }}
   >
@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <Logo width="400" />
         </Link>
       </h1>
     </div>

@@ -19,11 +19,11 @@ export default {
     heading: 1.125,
   },
   colors: {
-    text: "#000",
-    background: "#fff",
-    primary: "#07c",
-    secondary: "#30c",
-    muted: "#f6f6f6",
+    text: "#CEB8B7",
+    background: "#341E34",
+    primary: "#EC9D5D",
+    secondary: "#AF4846",
+    muted: "#5F3A4C",
   },
   text: {
     heading: {
