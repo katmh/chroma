@@ -5,13 +5,13 @@ export default {
   fonts: {
     body:
       'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "inherit",
+    heading: "Bebas Neue Book",
     monospace: "Menlo, monospace",
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontSizes: [12, 14, 16, 20, 24, 36, 48, 64, 96],
   fontWeights: {
     body: 400,
-    heading: 700,
+    heading: 350,
     bold: 700,
   },
   lineHeights: {

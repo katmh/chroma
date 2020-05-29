@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Heading } from "theme-ui"
 import { Link } from "gatsby"
 import Logo from "./logo"
 import Container from "./container"
@@ -15,7 +15,17 @@ const Header = () => (
     >
       <div>
         <Logo />
-        <h2>MIT's Science and Humanities Magazine</h2>
+        <h2
+          sx={{
+            fontFamily: "heading",
+            fontSize: 5,
+            fontWeight: "heading",
+            letterSpacing: ".5px",
+            my: 3,
+          }}
+        >
+          MIT's Science and Humanities Magazine
+        </h2>
       </div>
 
       <nav>
