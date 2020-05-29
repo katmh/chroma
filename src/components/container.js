@@ -2,15 +2,15 @@
 import { jsx } from "theme-ui"
 
 const Container = ({ children }) => (
-  <main
+  <section
     sx={{
       width: "90%",
       maxWidth: "1000px",
-      mx: "auto"
+      mx: "auto",
     }}
   >
     {children}
-  </main>
+  </section>
 )
 
 export default Container

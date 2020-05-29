@@ -6,13 +6,18 @@ const Logo = ({ width }) => (
   <Link
     to="/"
     sx={{
-      width: "80%",
-      minWidth: "400px",
-      maxWidth: "700px",
-      stroke: theme => `${theme.colors.primary}`
-    }}  
+      stroke: theme => `${theme.colors.primary}`,
+      strokeWidth: "2",
+      display: "inline-block",
+    }}
   >
-    <svg class="logo-large" viewBox="0 0 887.59 141.4" >
+    <svg
+      class="logo-large"
+      viewBox="0 0 887.59 141.4"
+      sx={{
+        width: 650,
+      }}
+    >
       <g>
         <path
           class="a"
