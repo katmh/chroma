@@ -1,5 +1,24 @@
 // example base theme from @theme-ui/presets
 export default {
+  useCustomProperties: true,
+  initialColorMode: "light",
+  colors: {
+    text: "#000",
+    background: "#fff",
+    primary: "#07c",
+    //text: "#CEB8B7",
+    //background: "#341E34",
+    //primary: "#EC9D5D",
+    secondary: "#AF4846",
+    muted: "#5F3A4C",
+    modes: {
+      dark: {
+        text: "#fff",
+        background: "#000",
+        primary: "#0cf",
+      },
+    },
+  },
   breakpoints: ["40em", "52em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
@@ -17,13 +36,6 @@ export default {
   lineHeights: {
     body: 1.5,
     heading: 1.125,
-  },
-  colors: {
-    text: "#CEB8B7",
-    background: "#341E34",
-    primary: "#EC9D5D",
-    secondary: "#AF4846",
-    muted: "#5F3A4C",
   },
   text: {
     heading: {

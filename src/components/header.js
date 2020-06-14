@@ -3,6 +3,7 @@ import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import Logo from "./logo"
 import Container from "./container"
+import ThemeSwitcher from "./theme-switcher"
 
 const Header = () => (
   <Container>
@@ -30,7 +31,7 @@ const Header = () => (
 
       <nav>
         <Link to="/about">About</Link>
-        <Link to="/about">Dark</Link>
+        <ThemeSwitcher />
       </nav>
     </header>
   </Container>
