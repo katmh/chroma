@@ -7,6 +7,9 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.4",
+    "@reach/dialog": "^0.10.3",
+    "@reach/tabs": "^0.10.3",
+    "@reach/visually-hidden": "^0.10.2",
     "gatsby": "^2.21.37",
     "gatsby-image": "^2.4.4",
     "gatsby-plugin-manifest": "^2.4.5",
@@ -23,6 +26,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
+    "react-netlify-identity": "^0.2.5",
+    "react-netlify-identity-widget": "^0.2.7",
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {

@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: git-gateway
+  repo: katmh/chroma-gatsby
 
 media_folder: static/assets
 public_folder: /assets
