@@ -7,11 +7,36 @@ public_folder: /assets
 
 collections:
   - name: blog
-    label: Blog
-    folder: blog
+    label: Articles
+    label_singular: Article
+    folder: articles
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: author, label: Author }
+      - { name: date, label: Date, widget: date }
+      - { name: path, label: Path }
+      - { name: image, label: Cover Image, widget: image }
       - { name: body, label: Body, widget: markdown }
+  - name: members
+    label: Team Members
+    label_singular: Team Member
+    description: Members of Chroma, for the masthead on the About page
+    folder: members
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Name }
+      - { name: year, label: Graduation Year }
+      - { name: role, label: Role }
+  - name: covers
+    label: Print Issue Covers
+    label_singular: Issue
+    description: Basic info and cover images of Chroma print issues, for the homepage
+    folder: covers
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Title }
+      - { name: cover, label: Cover Image, widget: image }
+      - { name: season, label: Season }
