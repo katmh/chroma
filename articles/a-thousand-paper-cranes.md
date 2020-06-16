@@ -1,7 +1,8 @@
 ---
-path: a-thousand-paper-cranes
-date: 2020-06-14T16:35:30.604Z
 title: A Thousand Paper Cranes
+author: Rona Wang
+date: 2020-06-14T16:35:30.604Z
+path: a-thousand-paper-cranes
 ---
 It’s July 1945, and war devastates half the planet. Casualty numbers climb into the tens of millions. America, the United Kingdom, and China collectively demand that Japan surrender, or face “prompt and utter destruction.” Japan refuses. In a few weeks, America brings the promised atomic apocalypse to Hiroshima and Nagasaki.
 
