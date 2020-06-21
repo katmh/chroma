@@ -5,10 +5,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMarkdownRemark {
         edges {
           node {
             frontmatter {
@@ -27,13 +24,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: `/p/${node.frontmatter.path}`,
-      component: blogPostTemplate,
-      context: {
-        // additional data can be passed via context
-        slug: node.frontmatter.path,
-      },
-    })
+    if (node.frontmatter.path && node.frontmatter.path != null) {
+      createPage({
+        path: `/p/${node.frontmatter.path}`,
+        component: blogPostTemplate,
+        context: {
+          // additional data can be passed via context
+          slug: node.frontmatter.path,
+        },
+      })
+    }
   })
 }
