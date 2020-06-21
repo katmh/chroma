@@ -7,9 +7,6 @@ const ThemeSwitcher = () => {
   return (
     <button
       sx={{
-        position: "absolute",
-        top: 3,
-        right: 3,
         backgroundColor: "primary",
         color: "background",
         border: 0,

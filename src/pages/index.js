@@ -42,9 +42,20 @@ function IndexPage({data}) {
           {articles.map(edge => (
             <article key={edge.node.id}>
               <Link to={"/p/" + edge.node.frontmatter.path}>
-                <h1>{edge.node.frontmatter.title}</h1>
+                <h1
+                  sx={{
+                    fontFamily: "heading"
+                  }}
+                >
+                  {edge.node.frontmatter.title}
+                </h1>
               </Link>
-              <div dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
+              <div
+                sx={{
+                  fontFamily: "body",
+                }}
+                dangerouslySetInnerHTML={{ __html: edge.node.excerpt }}
+              />
             </article>
           ))}
         </section>

@@ -22,8 +22,7 @@ export default {
   breakpoints: ["40em", "52em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    body:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    body: "Gentium Basic, serif",
     heading: "Bebas Neue Book",
     monospace: "Menlo, monospace",
   },
