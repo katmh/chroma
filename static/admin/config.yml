@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   repo: katmh/chroma-gatsby
+  branch: main
 
 media_folder: static/assets
 public_folder: /assets
