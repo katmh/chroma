@@ -1,21 +1,21 @@
-// example base theme from @theme-ui/presets
 export default {
   useCustomProperties: true,
   initialColorMode: "light",
   colors: {
-    text: "#000",
-    background: "#fff",
-    primary: "#07c",
-    //text: "#CEB8B7",
-    //background: "#341E34",
-    //primary: "#EC9D5D",
-    secondary: "#AF4846",
-    muted: "#5F3A4C",
+    // based on Illusion color palette
+    background: "#eeeeee",
+    text: "#332b2b",
+    primary: "#bb4433",
+    secondary: "#666262",
+    muted: "#bad0ce",
     modes: {
       dark: {
-        text: "#fff",
-        background: "#000",
-        primary: "#0cf",
+        // based on Horizons color palette
+        background: "#332233",
+        text: "#eebbaa",
+        primary: "#ee9955",
+        secondary: "#f59a9d",
+        muted: "#664455"
       },
     },
   },

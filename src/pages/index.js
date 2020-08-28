@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Container from "../components/container"
 import Shelf from "../components/shelf"
 import { Link } from "gatsby"
+import { transparentize } from "@theme-ui/color"
 
 function IndexPage({data}) {
   let articles = data.allMarkdownRemark.edges.filter(
@@ -34,7 +35,7 @@ function IndexPage({data}) {
       <Container>
         <section
           sx={{
-            mb: 5
+            mb: 5,
           }}
         >
           {articles.map(edge => (
@@ -43,14 +44,15 @@ function IndexPage({data}) {
                 to={"/p/" + edge.node.frontmatter.path}
                 sx={{
                   textDecoration: "none",
-                  color: "primary"
+                  color: "primary",
                 }}
               >
                 <h1
                   sx={{
                     fontFamily: "heading",
                     fontSize: 4,
-                    mb: 0
+                    mb: 0,
+                    color: "secondary",
                   }}
                 >
                   {edge.node.frontmatter.title}
@@ -58,9 +60,9 @@ function IndexPage({data}) {
               </Link>
               <p
                 sx={{
-                  color: "#777",
+                  color: transparentize("text", 0.15),
                   mt: 1,
-                  mb: 2
+                  mb: 2,
                 }}
               >
                 By {edge.node.frontmatter.author}, {edge.node.frontmatter.date}
@@ -68,7 +70,7 @@ function IndexPage({data}) {
               <div
                 sx={{
                   fontFamily: "body",
-                  fontSize: 2
+                  fontSize: 2,
                 }}
                 dangerouslySetInnerHTML={{ __html: edge.node.excerpt }}
               />
