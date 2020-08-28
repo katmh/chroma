@@ -22,11 +22,11 @@ export default {
   breakpoints: ["40em", "52em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    body: "Gentium Basic, serif",
-    heading: "Bebas Neue Book",
+    body: "Source Serif Pro, serif",
+    heading: "Palanquin, Helvetica, sans-serif",
     monospace: "Menlo, monospace",
   },
-  fontSizes: [12, 14, 16, 20, 24, 36, 48, 64, 96],
+  fontSizes: [12, 14, 18, 20, 24, 36, 48, 64, 96],
   fontWeights: {
     body: 400,
     heading: 350,

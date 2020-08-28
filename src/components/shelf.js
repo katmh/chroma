@@ -6,23 +6,20 @@ const Shelf = ({ children }) => (
   <section
     sx={{
       bg: "muted",
-      py: [3, 4],
+      py: 3,
     }}
   >
     <Container>
       <h2
         sx={{
-          position: 'absolute',
-          transform: 'rotate(-90deg)',
-          transformOrigin: 'left bottom',
-          display: 'inline-block',
-          mt: 6,
-          ml: '-0.5rem',
           textShadow: '5px 5px 0 #AF4846',
           letterSpacing: '2.5px',
           color: '#eee',
           textTransform: 'uppercase',
-          font: 'heading',
+          fontFamily: 'heading',
+          fontSize: 5,
+          my: 0,
+          mb: 2
         }}
       >
         Print

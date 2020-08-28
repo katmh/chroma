@@ -41,5 +41,22 @@ module.exports = {
     `gatsby-plugin-remark-collection`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Palanquin`,
+            variants: [`300`, `700`]
+          },
+          {
+            family: `Alegreya`
+          },
+          {
+            family: `Source Serif Pro`
+          }
+        ],
+      },
+    },
   ],
 }

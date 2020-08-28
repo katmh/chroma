@@ -1,15 +1,16 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Link } from "gatsby"
 import Logo from "./logo"
 import Container from "./container"
 import ThemeSwitcher from "./theme-switcher"
+import Nav from "./nav"
 
 const Header = () => (
   <Container>
     <header
       sx={{
-        my: 5,
+        mt: 5,
+        mb: 2,
         display: "flex",
         justifyContent: "space-between",
       }}
@@ -29,11 +30,11 @@ const Header = () => (
         </h2>
       </div>
 
-      <nav>
-        <Link to="/about">About</Link>
+      <div>
         <ThemeSwitcher />
-      </nav>
+      </div>
     </header>
+    <Nav />
   </Container>
 )
 
