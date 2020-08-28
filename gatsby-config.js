@@ -22,6 +22,21 @@ module.exports = {
         path: `${__dirname}/articles/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `articles`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/templates/page-template.js"),
+        },
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-remark-collection`,
     `gatsby-transformer-sharp`,
