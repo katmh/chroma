@@ -45,7 +45,7 @@ collections:
     label: Pages
     label_singular: Page
     description: Content for site pages (About, Contact)
-    folder: articles
+    folder: pages
     fields:
       - { name: title, label: Title }
       - { name: path, label: Path }
