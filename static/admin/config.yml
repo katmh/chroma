@@ -41,3 +41,11 @@ collections:
       - { name: title, label: Title }
       - { name: cover, label: Cover Image, widget: image }
       - { name: season, label: Season }
+  - name: pages
+    label: Pages
+    label_singular: Page
+    description: Content for site pages (About, Contact)
+    folders: pages
+    fields:
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown}
