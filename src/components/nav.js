@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
+import { darken } from "@theme-ui/color"
 
 const Nav = () => {
   return (
@@ -14,7 +15,11 @@ const Nav = () => {
           fontSize: 3,
           color: "primary",
           mr: 4,
-        }
+          transition: "0.1s ease-in-out",
+          ":hover": {
+            color: darken("primary", 0.1),
+          },
+        },
       }}
     >
       <Link to="/about">About</Link>
