@@ -5,8 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/container"
 import Shelf from "../components/shelf"
-import { Link } from "gatsby"
-import { transparentize } from "@theme-ui/color"
+import ArticleCard from "../components/article-card"
 
 function IndexPage({data}) {
   let articles = data.allMarkdownRemark.edges.filter(
@@ -39,42 +38,7 @@ function IndexPage({data}) {
           }}
         >
           {articles.map(edge => (
-            <article key={edge.node.id}>
-              <Link
-                to={"/p/" + edge.node.frontmatter.path}
-                sx={{
-                  textDecoration: "none",
-                  color: "primary",
-                }}
-              >
-                <h1
-                  sx={{
-                    fontFamily: "heading",
-                    fontSize: 4,
-                    mb: 0,
-                    color: "secondary",
-                  }}
-                >
-                  {edge.node.frontmatter.title}
-                </h1>
-              </Link>
-              <p
-                sx={{
-                  color: transparentize("text", 0.15),
-                  mt: 1,
-                  mb: 2,
-                }}
-              >
-                By {edge.node.frontmatter.author}, {edge.node.frontmatter.date}
-              </p>
-              <div
-                sx={{
-                  fontFamily: "body",
-                  fontSize: 2,
-                }}
-                dangerouslySetInnerHTML={{ __html: edge.node.excerpt }}
-              />
-            </article>
+            <ArticleCard key={edge.node.id} node={edge.node} />
           ))}
         </section>
       </Container>
