@@ -11,22 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `covers`,
-        path: `${__dirname}/covers/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `articles`,
-        path: `${__dirname}/articles/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `articles`,
-        path: `${__dirname}/src/pages/`,
+        name: `cms`,
+        path: `${__dirname}/cms/`,
       },
     },
     {
@@ -47,14 +33,14 @@ module.exports = {
         fonts: [
           {
             family: `Palanquin`,
-            variants: [`300`, `700`]
+            variants: [`300`, `700`],
           },
           {
-            family: `Alegreya`
+            family: `Alegreya`,
           },
           {
-            family: `Source Serif Pro`
-          }
+            family: `Source Serif Pro`,
+          },
         ],
       },
     },

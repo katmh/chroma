@@ -10,7 +10,7 @@ collections:
   - name: blog
     label: Articles
     label_singular: Article
-    folder: articles
+    folder: cms/articles
     create: true
     fields:
       - { name: title, label: Title }
@@ -23,7 +23,7 @@ collections:
     label: Team Members
     label_singular: Team Member
     description: Members of Chroma, for the masthead on the About page
-    folder: members
+    folder: cms/members
     create: true
     slug: "{{slug}}"
     fields:
@@ -34,7 +34,7 @@ collections:
     label: Print Issue Covers
     label_singular: Issue
     description: Basic info and cover images of Chroma print issues, for the homepage
-    folder: covers
+    folder: cms/covers
     create: true
     slug: "{{slug}}"
     fields:
@@ -45,7 +45,7 @@ collections:
     label: Pages
     label_singular: Page
     description: Content for site pages (About, Contact)
-    folder: pages
+    folder: cms/pages
     fields:
       - { name: title, label: Title }
       - { name: path, label: Path }
