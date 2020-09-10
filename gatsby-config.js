@@ -11,8 +11,29 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `cms`,
-        path: `${__dirname}/cms/`,
+        name: `articles`,
+        path: `${__dirname}/cms/articles`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `covers`,
+        path: `${__dirname}/cms/covers`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `members`,
+        path: `${__dirname}/cms/members`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/cms/pages`,
       },
     },
     {

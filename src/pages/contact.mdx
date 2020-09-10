@@ -2,8 +2,18 @@
 title: Contact
 ---
 
-## Contact
+import { graphql } from "gatsby"
 
-### Submit art or writing
+<div dangerouslySetInnerHTML={{ __html: props.data.content.edges[0].node.html }} />
 
-### Join Chroma exec
+export const pageQuery = graphql`
+  query {
+    content: allMarkdownRemark(filter: {fields: {collection: {eq: "pages"}}, frontmatter: {path: {eq: "contact"}}}) {
+      edges {
+        node {
+          html
+        }
+      }
+    }
+  }
+`
