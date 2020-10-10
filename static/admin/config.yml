@@ -15,6 +15,7 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: author, label: Author }
+      - { name: artist, label: Artist }
       - { name: date, label: Date, widget: date }
       - { name: path, label: Path }
       - { name: tagline, label: Tagline }
