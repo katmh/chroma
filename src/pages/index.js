@@ -1,23 +1,49 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/container"
 import Shelf from "../components/shelf"
+import Banner from "../components/banner"
 import ArticleCard from "../components/article-card"
+import Gallery from "../components/gallery"
 
 function IndexPage({data}) {
-  let articles = data.allMarkdownRemark.edges.filter(
-    edge => edge.node.fields.collection === "articles"
-  );
-  let covers = data.allMarkdownRemark.edges.filter(
-    edge => edge.node.fields.collection === "covers"
-  );
+  let articles = data.articles.edges
+  let covers = data.covers.edges
+  console.log(articles)
 
   return (
     <Layout>
       <SEO title="Home" />
+
+      <Banner>
+        <i>Chroma</i> is a student-run magazine engaging the MIT community with the intersection between the sciences and the humanities through in-depth writing and thought-provoking art.
+      </Banner>
+      
+      <Container>
+        <section
+          sx={{
+            my: 5,
+          }}
+        >
+          <Gallery>
+            {articles.map(edge => (
+              <ArticleCard key={edge.node.id} node={edge.node} />
+            ))}
+          </Gallery>
+        </section>
+        <Link
+          to="articles"
+          sx={{
+
+          }}
+        >
+          Read more
+        </Link>
+      </Container>
+
       <Shelf>
         {covers.map(edge => (
           <div key={edge.node.id}>
@@ -31,24 +57,13 @@ function IndexPage({data}) {
           </div>
         ))}
       </Shelf>
-      <Container>
-        <section
-          sx={{
-            mb: 5,
-          }}
-        >
-          {articles.map(edge => (
-            <ArticleCard key={edge.node.id} node={edge.node} />
-          ))}
-        </section>
-      </Container>
     </Layout>
   )
 }
 
 export const query = graphql`
 {
-  allMarkdownRemark {
+  articles: allMarkdownRemark(filter: {fields: {collection: {eq: "articles"}}}, limit: 2) {
     edges {
       node {
         frontmatter {
@@ -56,14 +71,19 @@ export const query = graphql`
           author
           date(formatString: "MMMM D, YYYY")
           title
-
-          cover
-          semester
           image
         }
         excerpt(pruneLength: 350)
-        fields {
-          collection
+        id
+      }
+    }
+  }
+  covers: allMarkdownRemark(filter: {fields: {collection: {eq: "covers"}}}) {
+    edges {
+      node {
+        frontmatter {
+          cover
+          semester
         }
         id
       }

@@ -11,11 +11,11 @@ const ArticlesPage = ({ data }) => {
   return (
     <PageTemplate>
       <SEO title="Articles" />
-      <Gallery>
+
         {articles.map(article => (
-          <ArticleCard key={article.node.id} node={article.node} />
+          <ArticleCard key={article.node.id} node={article.node} horizontal />
         ))}
-      </Gallery>
+
     </PageTemplate>
   )
 }
@@ -30,11 +30,9 @@ export const query = graphql`
             author
             date(formatString: "MMMM D, YYYY")
             title
+            image
           }
           excerpt(pruneLength: 350)
-          fields {
-            collection
-          }
           id
         }
       }

@@ -6,23 +6,21 @@ const Shelf = ({ children }) => (
   <section
     sx={{
       bg: "muted",
-      py: 3,
+      pt: 4,
+      pb: 5
     }}
   >
     <Container>
       <h2
         sx={{
-          textShadow: '5px 5px 0 #AF4846',
-          letterSpacing: '2.5px',
-          color: '#eee',
-          textTransform: 'uppercase',
+          color: 'secondary',
           fontFamily: 'heading',
-          fontSize: 5,
+          fontSize: 4,
           my: 0,
-          mb: 2
+          mb: 3
         }}
       >
-        Print
+        Check out our print issues <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"></path></svg>
       </h2>
       <div
         sx={{

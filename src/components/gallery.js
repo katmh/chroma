@@ -7,7 +7,7 @@ const Gallery = ({ children }) => {
       sx={{
         display: `grid`,
         gridTemplateColumns: `repeat(auto-fit, minmax(400px, 1fr))`,
-        gridGap: `2rem`
+        gridGap: `3rem`
       }}
     >
       {children}
