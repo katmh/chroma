@@ -58,6 +58,7 @@ module.exports = {
           },
           {
             family: `Alegreya`,
+            variants: [`400`, `400i`]
           },
           {
             family: `Source Serif Pro`,

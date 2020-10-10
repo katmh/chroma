@@ -1,4 +1,4 @@
-import { transparentize } from "@theme-ui/color"
+import { lighten, transparentize } from "@theme-ui/color"
 
 export default {
   useCustomProperties: true,
@@ -43,6 +43,7 @@ export default {
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "heading",
+      my: 4,
     },
     byline: {
       color: transparentize("text", 0.15)
@@ -60,11 +61,12 @@ export default {
     },
     h2: {
       variant: "text.heading",
-      fontSize: 4,
+      fontSize: 5,
     },
     h3: {
       variant: "text.heading",
-      fontSize: 3,
+      fontSize: 4,
+      lineHeight: "140%",
     },
     h4: {
       variant: "text.heading",
@@ -104,6 +106,13 @@ export default {
     },
     p: {
       fontSize: 2
+    },
+    a: {
+      color: "primary",
+      transition: ".1s ease-in-out",
+      ":hover": {
+        color: lighten("primary", 0.1)
+      }
     }
   },
 }

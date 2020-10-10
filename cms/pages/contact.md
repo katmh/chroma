@@ -3,7 +3,7 @@ title: Contact
 path: contact
 ---
 
-## Contact
+# Contact
 
 ### Submit art or writing
 

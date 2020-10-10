@@ -3,7 +3,7 @@ title: About
 path: about
 ---
 
-## About Chroma
+# About Chroma
 
 ### *Chroma* is a student-run magazine that aims to engage the MIT community with the intersection between the sciences and the humanities through in-depth writing and thought-provoking art.
 

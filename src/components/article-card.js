@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { transparentize } from "@theme-ui/color"
+import { darken } from "@theme-ui/color"
 
 const ArticleCard = ({ node, horizontal }) => {
   const styles = {
@@ -15,7 +16,11 @@ const ArticleCard = ({ node, horizontal }) => {
       m: 0,
       mb: 2,
       color: "secondary",
-      lineHeight: "120%"
+      lineHeight: "120%",
+      transition: '0.1s ease-in-out',
+      ':hover': {
+        color: darken('secondary', 0.075)
+      }
     },
     byline: {
       color: transparentize("text", 0.15),

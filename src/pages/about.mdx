@@ -3,8 +3,9 @@ title: About
 ---
 
 import { graphql } from "gatsby"
+import { BaseStyles } from "theme-ui"
 
-<div dangerouslySetInnerHTML={{ __html: props.data.content.edges[0].node.html }} />
+<BaseStyles dangerouslySetInnerHTML={{ __html: props.data.content.edges[0].node.html }} />
 
 export const pageQuery = graphql`
   query {
