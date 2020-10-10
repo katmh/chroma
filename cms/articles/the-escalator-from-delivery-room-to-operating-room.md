@@ -1,8 +1,10 @@
 ---
 title: The Escalator from Delivery Room to Operating Room
 author: Laura Liao
-date: 2020-06-20T21:41:12.805Z
-path: escalator-delivery-room-operating-room
+artist: Janice Tjan
+date: 2018-10-30T04:00:00.000Z
+path: the-escalator-from-delivery-room-to-operating-room
+tagline: '"Almost one in every three births in the U.S. in 2016 were by C‐section."'
 image: /assets/csection-janice-tjan.jpg
 ---
 Mothers and medical professionals alike naturally evaluate the success of pregnancies by their end products: healthy babies and healthy moms. Fixation on these successful results, however, often leaves the actual process of childbirth by the wayside. Less consideration is given to whether the baby is delivered in a hospital bed or in an operating room by Caesarian section. The setting matters little to most, and I certainly never considered its importance until I took WGS.151, a class focused on the ways that gender and societal norms drive healthcare outcomes.
