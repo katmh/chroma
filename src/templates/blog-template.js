@@ -75,7 +75,13 @@ export default function Template({
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
-              sx={styles.styles}
+              sx={{
+                ...styles.styles,
+                img: {
+                  mx: 'auto',
+                  display: 'block'
+                }
+              }}
             />
         </div>
       </Container>
