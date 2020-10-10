@@ -75,7 +75,11 @@ function IndexPage({data}) {
 
 export const query = graphql`
 {
-  articles: allMarkdownRemark(filter: {fields: {collection: {eq: "articles"}}}, limit: 2) {
+  articles: allMarkdownRemark(
+    filter: {fields: {collection: {eq: "articles"}}},
+    limit: 2,
+    sort: {fields: frontmatter___date, order: DESC}
+  ) {
     edges {
       node {
         frontmatter {
@@ -90,7 +94,9 @@ export const query = graphql`
       }
     }
   }
-  covers: allMarkdownRemark(filter: {fields: {collection: {eq: "covers"}}}) {
+  covers: allMarkdownRemark(
+    filter: {fields: {collection: {eq: "covers"}}}
+  ) {
     edges {
       node {
         frontmatter {

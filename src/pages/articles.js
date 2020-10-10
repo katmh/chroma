@@ -21,7 +21,10 @@ const ArticlesPage = ({ data }) => {
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: {fields: {collection: {eq: "articles"}}}) {
+    allMarkdownRemark(
+      filter: {fields: {collection: {eq: "articles"}}},
+      sort: {fields: frontmatter___date, order: DESC}
+    ) {
       edges {
         node {
           frontmatter {
