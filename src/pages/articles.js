@@ -33,6 +33,7 @@ export const query = graphql`
             date(formatString: "MMMM D, YYYY")
             title
             image
+            tagline
           }
           excerpt(pruneLength: 300)
           id

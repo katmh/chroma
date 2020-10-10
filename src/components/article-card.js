@@ -44,7 +44,8 @@ const ArticleCard = ({ node, horizontal }) => {
     <article
       sx={{
         my: "3rem",
-        display: horizontal ? "flex" : "block"
+        display: horizontal ? "grid" : "block",
+        gridTemplateColumns: "1fr 3fr"
       }}
     >
       <div sx={styles.imageContainer}>
@@ -72,11 +73,11 @@ const ArticleCard = ({ node, horizontal }) => {
           </h1>
         </Link>
         <p sx={styles.byline}>
-          By {node.frontmatter.author}, {node.frontmatter.date}
+          By <span sx={{ textTransform: "uppercase" }}>{node.frontmatter.author}</span>, {node.frontmatter.date}
         </p>
         <div
           sx={styles.excerpt}
-          dangerouslySetInnerHTML={{ __html: node.excerpt }}
+          dangerouslySetInnerHTML={{ __html: node.frontmatter.tagline ? node.frontmatter.tagline : node.excerpt }}
         />
       </div>
     </article>

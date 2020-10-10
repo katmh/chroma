@@ -26,7 +26,8 @@ function IndexPage({data}) {
       <Container>
         <section
           sx={{
-            my: 5,
+            mt: 4,
+            mb: 5
           }}
         >
           <Gallery>
@@ -89,7 +90,7 @@ export const query = graphql`
           title
           image
         }
-        excerpt(pruneLength: 350)
+        excerpt(pruneLength: 300)
         id
       }
     }

@@ -5,10 +5,10 @@ path: contact
 
 # Contact
 
-### Submit art or writing
+## Submit art or writing
 
 Here are details about how to submit art or writing pieces
 
-### Join Chroma exec
+## Join our staff
 
 Here are details about becoming more involved in Chroma
