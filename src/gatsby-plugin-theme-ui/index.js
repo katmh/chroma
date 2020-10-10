@@ -1,3 +1,5 @@
+import { transparentize } from "@theme-ui/color"
+
 export default {
   useCustomProperties: true,
   initialColorMode: "light",
@@ -12,7 +14,7 @@ export default {
       dark: {
         // based on Horizons color palette
         background: "#332233",
-        text: "#eebbaa",
+        text: "#f6ddd4",
         primary: "#ee9955",
         secondary: "#f59a9d",
         muted: "#664455"
@@ -20,7 +22,7 @@ export default {
     },
   },
   breakpoints: ["40em", "52em", "64em"],
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  space: [0, 4, 8, 16, 32, 48, 64, 128, 256, 512],
   fonts: {
     body: "Source Serif Pro, serif",
     heading: "Palanquin, Helvetica, sans-serif",
@@ -29,7 +31,7 @@ export default {
   fontSizes: [12, 14, 18, 20, 24, 36, 48, 64, 96],
   fontWeights: {
     body: 400,
-    heading: 350,
+    heading: 700,
     bold: 700,
   },
   lineHeights: {
@@ -42,6 +44,9 @@ export default {
       lineHeight: "heading",
       fontWeight: "heading",
     },
+    byline: {
+      color: transparentize("text", 0.15)
+    }
   },
   styles: {
     root: {
@@ -51,7 +56,7 @@ export default {
     },
     h1: {
       variant: "text.heading",
-      fontSize: 5,
+      fontSize: 6,
     },
     h2: {
       variant: "text.heading",
@@ -97,5 +102,8 @@ export default {
       textAlign: "left",
       borderBottomStyle: "solid",
     },
+    p: {
+      fontSize: 2
+    }
   },
 }

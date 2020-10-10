@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Container from "../components/container"
@@ -8,6 +8,7 @@ import Shelf from "../components/shelf"
 import Banner from "../components/banner"
 import ArticleCard from "../components/article-card"
 import Gallery from "../components/gallery"
+import Button from "../components/button"
 
 function IndexPage({data}) {
   let articles = data.articles.edges
@@ -33,27 +34,38 @@ function IndexPage({data}) {
               <ArticleCard key={edge.node.id} node={edge.node} />
             ))}
           </Gallery>
+          <div sx={{
+            textAlign: "center",
+            mb: 4
+          }}>
+            <Button
+              text="Read More"
+              to="articles"
+            />
+          </div>
         </section>
-        <Link
-          to="articles"
-          sx={{
-
-          }}
-        >
-          Read more
-        </Link>
       </Container>
 
       <Shelf>
         {covers.map(edge => (
-          <div key={edge.node.id}>
-            <img
-              src={edge.node.frontmatter.cover}
-              alt={edge.node.frontmatter.title}
-              sx={{
-                width: "100%",
-              }}
-            />
+          <div
+            key={edge.node.id}
+            sx={{
+              transition: "0.1s ease-in-out",
+              ":hover": {
+                transform: "scale(1.025)"
+              }
+            }}
+          >
+            <a href={edge.node.frontmatter.issuu_link}>
+              <img
+                src={edge.node.frontmatter.cover}
+                alt={edge.node.frontmatter.title}
+                sx={{
+                  width: "100%",
+                }}
+              />
+            </a>
           </div>
         ))}
       </Shelf>
@@ -84,6 +96,7 @@ export const query = graphql`
         frontmatter {
           cover
           semester
+          issuu_link
         }
         id
       }

@@ -4,10 +4,10 @@ import Logo from "./logo"
 import Container from "./container"
 import Nav from "./nav"
 
-const Header = () => (
+const Header = ({ smallLogo }) => (
   <Container>
-    <Nav />
-    <header
+    <Nav smallLogo={smallLogo} />
+    {smallLogo ? null : (<header
       sx={{
         mt: "7rem",
         mb: "8rem",
@@ -15,7 +15,7 @@ const Header = () => (
       }}
     >
       <Logo /> 
-    </header>
+    </header>)}
   </Container>
 )
 

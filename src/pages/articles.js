@@ -2,7 +2,6 @@
 import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 import PageTemplate from "../templates/page-template"
-import Gallery from "../components/gallery"
 import ArticleCard from "../components/article-card"
 import SEO from "../components/seo"
 
@@ -32,7 +31,7 @@ export const query = graphql`
             title
             image
           }
-          excerpt(pruneLength: 350)
+          excerpt(pruneLength: 300)
           id
         }
       }

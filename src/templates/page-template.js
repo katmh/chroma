@@ -1,13 +1,20 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import Layout from "../components/layout"
 import Container from "../components/container"
 import SEO from "../components/seo"
 
 export default function PageTemplate({ children, title, data }) {
   return (
-    <Layout>
+    <Layout smallLogo>
       <SEO title={title} />
-      <Container>{children}</Container>
+      <Container
+        sx={{
+          paddingBottom: 4
+        }}
+      >
+        {children}
+      </Container>
     </Layout>
   )
 }

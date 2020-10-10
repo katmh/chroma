@@ -7,10 +7,9 @@ const footer = () => {
       sx={{
         width: '100%',
         height: '15px',
-        mt: 5,
+        mt: 6,
         bg: 'muted',
         display: 'block',
-
       }}
     />
   )

@@ -14,7 +14,7 @@ const Logo = ({ width }) => (
     <svg
       viewBox="0 0 887.59 141.4"
       sx={{
-        width: 650,
+        width: width ? width : 650,
       }}
     >
       <g>

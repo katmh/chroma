@@ -13,7 +13,9 @@ const ArticleCard = ({ node, horizontal }) => {
       fontFamily: "heading",
       fontSize: 4,
       m: 0,
+      mb: 2,
       color: "secondary",
+      lineHeight: "120%"
     },
     byline: {
       color: transparentize("text", 0.15),
@@ -36,32 +38,42 @@ const ArticleCard = ({ node, horizontal }) => {
   return (
     <article
       sx={{
-        my: 4,
+        my: "3rem",
         display: horizontal ? "flex" : "block"
       }}
     >
       <div sx={styles.imageContainer}>
-      <img 
-        src={node.frontmatter.image}
-        alt="To do"
-        sx={styles.image}
-      />
+        <Link
+          to={"/p/" + node.frontmatter.path}
+        >
+          <img 
+            src={node.frontmatter.image}
+            alt="To do"
+            sx={styles.image}
+          />
+        </Link>
       </div>
-      <Link
-        to={"/p/" + node.frontmatter.path}
-        sx={styles.link}
-      >
-        <h1 sx={styles.title}>
-          {node.frontmatter.title}
-        </h1>
-      </Link>
-      <p sx={styles.byline}>
-        By {node.frontmatter.author}, {node.frontmatter.date}
-      </p>
       <div
-        sx={styles.excerpt}
-        dangerouslySetInnerHTML={{ __html: node.excerpt }}
-      />
+        sx={{
+          ml: horizontal ?  "1.5rem" : 0
+        }}
+      >
+        <Link
+          to={"/p/" + node.frontmatter.path}
+          sx={styles.link}
+        >
+          <h1 sx={styles.title}>
+            {node.frontmatter.title}
+          </h1>
+        </Link>
+        <p sx={styles.byline}>
+          By {node.frontmatter.author}, {node.frontmatter.date}
+        </p>
+        <div
+          sx={styles.excerpt}
+          dangerouslySetInnerHTML={{ __html: node.excerpt }}
+        />
+      </div>
     </article>
   )
 }

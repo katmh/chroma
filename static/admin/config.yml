@@ -41,6 +41,7 @@ collections:
       - { name: title, label: Title }
       - { name: cover, label: Cover Image, widget: image }
       - { name: season, label: Season }
+      - { name: issuu_link, label: Issuu Link }
   - name: pages
     label: Pages
     label_singular: Page
