@@ -25,3 +25,31 @@ Every high school freshman is familiar with the classical tools of geometry: the
 But not every geometric question can be answered with these two instruments. Take the Delian problem. Here’s how the story goes. Citizens of the ancient island of Delos—a small barren rock nestled in the Aegean sea—consult the Oracle of Delphi. They’re desperate; an apocalyptic plague sent down by Apollo has decimated their population. In response, the Oracle informs them that they must double the size of their altar, a regular cube, to Apollo. A trio of ancient mathematicians—Eudoxus, Archytas, Menaechmus—discover solutions, but not through geometric means. They are reprimanded by Plato, but he, too, cannot solve the riddle.
 
 Thousands of years later, in 1837, French mathematician Pierre Wantzel proves that it is impossible to double a cube with only a straightedge and compass.So we turn to origami, which makes quick work of the task. First, fold a square into thirds. Next, sweep the bottom-left corner up to meet the right edge, so the two—thirds line brushes against the one-third line. (See the diagram below.) The point where corner meets edge divides the side of the square, such that a cube with an edge the length of the longer portion will be double the volume of a cube with an edge the length of the shorter portion.
+
+![Diagram of fold](/assets/origami_picture.png "Courtesy of CutOutFoldUp.com")
+
+Sometimes we need unconventional methods to construct the world. Sometimes we need unconventional methods to destruct it.
+
+In November 1954, Sadako Sasaki’s team, the Bamboos, wins a relay race at school. When she comes home exuberantly, she notices that swellings have surfaced on her neck. Over the next several weeks, her face puffs up like a mumps victim’s. By January, red and purple spots dot her legs. The diagnosis: leukemia, the aftermath of radiation exposure. By the time she’s admitted to Hiroshima Red Cross Hospital, her white blood cell count is six times higher than average.
+
+At Hiroshima Red Cross, she meets Kiyo Okura, her roommate. Kiyo introduces her to origami, and soon, Sadako makes cranes out of all materials she can obtain—medicine and wrapping papers, cellophane. As she steadily cultivates hundreds of cranes, they dwindle in size; she uses a needle to crease them. Colorful birds pepper the windowsills and nightstands of hospital patients.
+
+![One of Sadako’s cranes next to a grain of rice](/assets/crane.jpg "One of Sadako’s cranes next to a grain of rice. Courtesy of the Hiroshima Peace Memorial Museum.")
+
+According to the Hiroshima Peace Memorial Museum, her father recounts, “We warned her, ‘If you keep up that pace you'll wear yourself out.’ Sadako continued to fold, saying, ‘It’s okay, it’s okay. I have a plan.’ You could feel the intensity of her desire to live in the way she threw herself into folding.”
+
+Perhaps we can map Sadako’s wish for survival in the folds that traverse each sheet of paper. If the origami is flattened, these lines create a “crease pattern”—a diagram of folds that transform a slip of cellophane or gift-wrap into a butterfly, a cup, a crane.
+
+One of the most important questions in origami math is whether a given crease pattern can be translated into a flat model, or an origami creation that can be pressed flat without deforming. This is an NP-complete problem, where NP stands for “nondeterministic polynomial time.” In short, while a solution to an NP-complete problem can be verified easily, it’s impossible to generate a solution to an NP-complete problem through mathematical means. Given any crease pattern, it’s easy to check that it can be made into a flat model. But devising a crease pattern that can be folded to a flat model proves to be so difficult, a computer can’t do it.
+
+Flat models matter because origami is more than art. In the days before GPS, maps were folded using an origami tessellation, the Miura-ori. Parallelograms tiled the page, rendering it simple to furl and unfurl. This design was also used to bring solar panels into outer space; every solar cell was a parallelogram, painstakingly arranged to resemble a six-sided flower.
+
+Still, origami mostly boils down to survival. Folding techniques derived from origami math have been developed for car airbags and collapsible stents (a small tube inserted into clogged arteries to encourage blood flow).
+
+One notable recent development is led by MIT professor Daniela Rus, whose team has designed a small, ingestible bot that unfolds itself from a capsule of ice. This bot can then tend to internal wounds or dispose of swallowed batteries.
+
+Another application of origami arises in architecture. Researchers from Georgia Tech, University of Tokyo, and UIUC have build the 3D zipper tube, which consists of interlocking slips of paper glued together in a zipper-like fashion. Highly resilient and easy to produce, these tubes can be adapted to various environments, suggesting possibilities for emergency shelter in natural disasters.
+
+Sadako Sasaki passes away on Oct. 25, 1955, but her legacy resonates for decades after. Her classmates raise funds to build a memorial to honor her and other child victims of the atomic bombing; in 1958, a statue of Sadako holding a golden crane is completed. In Japan, on Obon Day, people fold cranes to honor their ancestors’ departed spirits, and every year, a flurry of paper birds descend onto Sadako’s statue.
+
+Origami has lived on for centuries not for its scientific applications, but for its ability to cultivate community and creativity. It whispers legends to those who need them most and sprinkles color in hospital beds. It reminds us of the cost of war. It has helped us survive, long before it was brought into the laboratory.
