@@ -20,6 +20,7 @@ collections:
       - { name: path, label: Path }
       - { name: tagline, label: Tagline }
       - { name: image, label: Cover Image, widget: image }
+      - { name: tags, label: Tags, widget: list }
       - { name: body, label: Body, widget: markdown }
   - name: members
     label: Team Members
@@ -32,6 +33,7 @@ collections:
       - { name: title, label: Name }
       - { name: year, label: Graduation Year }
       - { name: role, label: Role }
+      - { name: photo, label: Photo, widget: image }
   - name: covers
     label: Print Issue Covers
     label_singular: Issue
