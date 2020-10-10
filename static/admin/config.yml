@@ -17,6 +17,7 @@ collections:
       - { name: author, label: Author }
       - { name: date, label: Date, widget: date }
       - { name: path, label: Path }
+      - { name: tagline, label: Tagline }
       - { name: image, label: Cover Image, widget: image }
       - { name: body, label: Body, widget: markdown }
   - name: members
