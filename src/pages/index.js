@@ -37,7 +37,8 @@ function IndexPage({data}) {
           </Gallery>
           <div sx={{
             textAlign: "center",
-            mb: 4
+            mt: [2, 0],
+            mb: [3, 4]
           }}>
             <Button
               text="Read More"

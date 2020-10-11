@@ -47,7 +47,7 @@ const Shelf = ({ children }) => (
         sx={{
           display: "grid",
           gridTemplateColumns: ["repeat(2, 1fr)", "repeat(5, 1fr)"],
-          gridGap: 4,
+          gridGap: [3, 4],
         }}
       >
         {children}

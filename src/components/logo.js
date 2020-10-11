@@ -15,7 +15,7 @@ const Logo = ({ width }) => (
       viewBox="0 0 887.59 141.4"
       sx={{
         width: width ? width : 650,
-        maxWidth: '100%'
+        maxWidth: '95%'
       }}
     >
       <g>

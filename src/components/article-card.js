@@ -43,8 +43,8 @@ const ArticleCard = ({ node, horizontal }) => {
   return (
     <article
       sx={{
-        my: "3rem",
-        display: horizontal ? "grid" : "block",
+        my: ["2rem", "3rem"],
+        display: ["block", horizontal ? "grid" : "block"],
         gridTemplateColumns: "1fr 3fr"
       }}
     >
@@ -61,7 +61,7 @@ const ArticleCard = ({ node, horizontal }) => {
       </div>
       <div
         sx={{
-          ml: horizontal ?  "1.5rem" : 0
+          ml: [0, horizontal ?  "1.5rem" : 0]
         }}
       >
         <Link

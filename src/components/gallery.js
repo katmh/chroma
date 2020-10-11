@@ -6,8 +6,8 @@ const Gallery = ({ children }) => {
     <section
       sx={{
         display: `grid`,
-        gridTemplateColumns: `repeat(auto-fit, minmax(400px, 1fr))`,
-        gridGap: `3rem`
+        gridTemplateColumns: [`1fr`, `repeat(auto-fit, minmax(400px, 1fr))`],
+        gridColumnGap: `3rem`
       }}
     >
       {children}

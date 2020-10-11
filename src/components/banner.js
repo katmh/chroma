@@ -13,7 +13,7 @@ const Banner = ({ children }) => (
       <h2
         sx={{
           color: 'text',
-          fontFamily: 'body',
+          fontFamily: 'heading',
           fontSize: 4,
           textAlign: 'center',
           my: 0,
