@@ -1,0 +1,31 @@
+---
+title: "Book Review: Proof: The Science of Booze"
+author: David Bustillos
+artist: Quinn Dombrowski
+date: 2018-04-15T04:00:00.000Z
+path: book-review-proof-the-science-of-booze
+tagline: Temp
+image: /assets/booze.jpg
+tags:
+  - science
+  - culture
+---
+In the United States, we live in what anthropologists Craig MacAndrew and Robert Edgerton called a “‘confused culture’ … where alcohol \[is] sometimes prohibited and sometimes lionized.” Expert American satirists and *South Park* creators Trey Parker and Matt Stone sum up the confusion in a hilarious mock commercial (NSFW like most of their publications), which aggrandizes booze but warns “drink responsibly” at the end. Booze still plays an essential part of our American culture as seen through the abundance of advertisements, liquor stores, and bars. Watch any sporting event, tune into any cable television show, or walk down city streets after five in the evening and you will be hard pressed not to see the influence of booze on our culture.
+
+Many of us like to enjoy an occasional drink, while others choose not drink at all or all the time. There comes a point when someone decides what their relationship with booze will be. After all, it is the culturally accepted drug of choice and widely available. The subject of booze elicits responses of love to hate and everything in between. Emotions aside, how many of us actually understand what’s going on when we pour ourselves a glass of single malt scotch whisky, a French red wine, or a cold American beer?
+
+Adam Rogers systematically breaks down the science behind booze and demystifies your drink of choice in his book *Proof: The Science of Booze*. It is less about the activity of drinking itself and more about all of the history, culture, and science that led to the creation of the actual drink. Readers can build an even deeper appreciation for their beverage of choice or gain insight into the what gets us booze geeks excited and intoxicated.
+
+Taking on the enormous topic of booze is no small feat. Humans have been making booze for thousands of years and stumbled on a multitude of scientific discoveries as a result. Rogers begins by inviting you to share in his experience at the cozy Booker and Dax bar with “booze sorcerer” Dave Arnold and introduces the concept of “a rigorous, scientific approach to creating a perfect drinking moment, every time.” He follows a logical path through the creation and consumption of booze in a series of chapters: Yeast, Sugar, Fermentation, Distillation, Aging, Smell and Taste, Body and Brain, and Hangover. Thirsty yet?
+
+Each chapter is a masterfully constructed literary cocktail. Rogers expertly mixes in the dry, potentially boring scientific exposition into the rich historical context while adding the colorful backdrop of the actual places and people involved. Rogers transports the reader from the whisky haven of Muir of Ord in the Scottish Highlands to the Tonnellerie (Cooperage) Radoux headquarters in California to Alan Marlatt’s Behavioral Alcohol Research (BAR) Lab at the University of Washington and many other exotic locales. Much like the way Marlatt concealed ethanol in drinks so that the subjects of his studies do not sense it, Rogers conceals a great wealth of scientific and historical knowledge in a way that does not feel like a textbook but like an elaborate story.
+
+There are times when the influx of knowledge can feel overwhelming, but the chapters break up the material into a more palatable experience. Each chapter contains a wealth of information that can stand alone but is best served in sequence that build on the reader’s growing base of knowledge and Rogers’ interwoven tales. For example, part of the Aging chapter appeared as an excellent article titled “The Angel’s Share” in *Wired*, a magazine for which Rogers is a senior editor. Rogers won the 2011 AAAS Kavli Science Journalism Award for the “Angel’s Share,” which delves into the discovery of a new genus of mold by an eccentric mycologist named James Scott.
+
+Rogers gives us an inside look at the cutting edge, intricate science of booze in a language that that can entertain a readership with varying backgrounds. Readers will benefit from a basic understanding of physics, biology, chemistry, and psychology. Knowledge of each field will lead to a more holistic, immersive experience as the pieces all fall together to in the inherently multidisciplinary exercise of making booze and understanding its effects. By giving the reader insights from experts in each field, Rogers allows the reader to process the knowledge directly from the source. This is not to say it’s incomprehensible for someone who lacks a scientific background. Rogers distills out the most important facts relevant to the story of booze. He does not allow less technical reader to drown in the science of booze by providing a wide variety of metaphors and analogies that offer a high degree of clarity.
+
+Rogers’ final powerful claim that his last drink in the book “tastes like civilization” gives a sense of the larger picture or booze in the world. From ancient Chinese brewers to the modern craft distillers in California, humans have a long history with booze that will continue into the foreseeable future. Every drink we have influences the next chapter in this history and we are stilling learning about booze.
+
+Once drunk on the knowledge of booze, readers will naturally look at their booze differently. Understanding booze may be the first steps in establishing a healthy relationship with it. The science and history of booze offer an excellent means of clearing up our “confused culture.” The whole point of booze is not to just get drunk as some seem to believe. *Proof* is a good starting point for disproving this idea. Rogers’ own concept of a “professional drinker” would go a long way for developing healthier, more sophisticated habits around booze, but like he says it is not for everybody.
+
+Making and drinking booze are ultimately part of our human experience and a great activity for us social creatures. Sharing a drink with someone is inherently social. Everyone has his or her own favorite drink, and we all experience it differently. Like a well-stocked bar with an excellent bartender by the name of Rogers, *Proof* has something for everyone. Enjoy responsibly.
