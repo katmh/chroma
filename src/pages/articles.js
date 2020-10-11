@@ -4,16 +4,49 @@ import { graphql } from "gatsby"
 import PageTemplate from "../templates/page-template"
 import ArticleCard from "../components/article-card"
 import SEO from "../components/seo"
+import { useState } from "react"
+import Fuse from 'fuse.js'
 
 const ArticlesPage = ({ data }) => {
-  const articles = data.allMarkdownRemark.edges
+  const articles = data.allMarkdownRemark.edges.map(edge => edge.node)
+  const fuse = new Fuse(articles, {
+    keys: ["frontmatter.title", "frontmatter.author", "excerpt"],
+  })
+  const [query, updateQuery] = useState("")
+  const onSearch = ({ currentTarget }) => updateQuery(currentTarget.value)
+  const results = fuse.search(query)
+  const articleResults = query ? results.map(article => article.item) : articles
+
   return (
     <PageTemplate>
       <SEO title="Articles" />
+        <input
+            type="text"
+            placeholder="Search..."
+            value={query}
+            onChange={onSearch}
+            sx={{
+              padding: ".4rem .5rem",
+              fontSize: 2,
+              border: "none",
+              borderBottom: "1px solid #aaa",
+              outline: "none",
+              width: "70%",
+              maxWidth: "25rem",
+              bg: "transparent",
+              mt: "2rem",
+              fontFamily: "body",
+              color: "text"
+            }}
+          />
 
-        {articles.map(article => (
-          <ArticleCard key={article.node.id} node={article.node} horizontal />
+        {articleResults.map(article => (
+          <ArticleCard key={article.id} node={article} horizontal />
         ))}
+
+        {articleResults.length == 0 ? (
+          <p>No results found :/</p>
+        ) : null}
 
     </PageTemplate>
   )
