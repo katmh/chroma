@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Chroma`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Chroma is a student-run magazine that aims to engage the MIT community with the intersection between the sciences and the humanities through in-depth writing and thought-provoking art.`,
+    author: `MIT Chroma`
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
