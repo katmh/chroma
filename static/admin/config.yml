@@ -18,7 +18,7 @@ collections:
       - { name: artist, label: Artist }
       - { name: date, label: Date, widget: date }
       - { name: path, label: Path }
-      - { name: tagline, label: Tagline }
+      - { name: tagline, label: Tagline, required: false }
       - { name: image, label: Cover Image, widget: image }
       - { name: tags, label: Tags, widget: list }
       - { name: body, label: Body, widget: markdown }
