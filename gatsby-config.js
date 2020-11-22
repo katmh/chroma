@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Chroma`,
     description: `Chroma is a student-run magazine that aims to engage the MIT community with the intersection between the sciences and the humanities through in-depth writing and thought-provoking art.`,
-    author: `MIT Chroma`
+    author: `MIT Chroma`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -49,21 +49,23 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Palanquin`,
-            variants: [`300`, `700`],
-          },
-          {
-            family: `Alegreya`,
-            variants: [`400`, `400i`]
-          },
-          {
-            family: `Source Serif Pro`,
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Palanquin`,
+              variants: [`300`, `700`],
+            },
+            {
+              family: `Alegreya`,
+              variants: [`400`, `400i`],
+            },
+            {
+              family: `Source Serif Pro`,
+            },
+          ],
+        },
       },
     },
   ],
