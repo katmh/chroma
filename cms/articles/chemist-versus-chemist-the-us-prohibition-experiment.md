@@ -26,6 +26,6 @@ Ginger Jake became particularly infamous, however, when two men from Boston, Har
 
 American Prohibition was ultimately a fierce chemist-versus-chemist battlefield. The victims were the U.S. people, and all parties had blood on their hands. The government was killing its own people in the name of so-called morality, while bootleggers were profiting off the blinding and paralysis their customers. Thank goodness that chemistry has now left all of that horrid business behind.
 
-**References:**
+### **References**
 
 Blum, Deborah. *The Poisoner's Handbook: Murder and the Birth of Forensic Medicine in Jazz Age New York*. Penguin Press, 2011.
