@@ -4,7 +4,7 @@ author: David Bustillos
 artist: Quinn Dombrowski
 date: 2018-04-15T04:00:00.000Z
 path: book-review-proof-the-science-of-booze
-tagline: Temp
+tagline: ""
 image: /assets/booze.jpg
 tags:
   - science
