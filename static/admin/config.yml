@@ -31,9 +31,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - { name: title, label: Name }
-      - { name: year, label: Graduation Year }
-      - { name: role, label: Role }
-      - { name: photo, label: Photo, widget: image }
+      - { name: year, label: Graduation Year, required: false }
+      - { name: role, label: Role, required: false }
+      - { name: photo, label: Photo, widget: image, required: false }
   - name: covers
     label: Print Issue Covers
     label_singular: Issue
