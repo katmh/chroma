@@ -6,7 +6,7 @@ date: 2018-11-16T05:00:00.000Z
 path: a-thousand-paper-cranes
 tagline: '"Legend states that anyone who folds a thousand cranes will have a
   wish fulfilled by the gods, and she wants to live."'
-image: /assets/paper_cranes.png
+image: /assets/paper_cranes.jpg
 tags:
   - history
 ---
@@ -28,7 +28,7 @@ But not every geometric question can be answered with these two instruments. Tak
 
 Thousands of years later, in 1837, French mathematician Pierre Wantzel proves that it is impossible to double a cube with only a straightedge and compass.So we turn to origami, which makes quick work of the task. First, fold a square into thirds. Next, sweep the bottom-left corner up to meet the right edge, so the two—thirds line brushes against the one-third line. (See the diagram below.) The point where corner meets edge divides the side of the square, such that a cube with an edge the length of the longer portion will be double the volume of a cube with an edge the length of the shorter portion.
 
-![Diagram of fold](/assets/origami_picture.png "Courtesy of CutOutFoldUp.com")
+![Diagram of fold](/assets/origami_picture.jpg "Courtesy of CutOutFoldUp.com")
 
 Sometimes we need unconventional methods to construct the world. Sometimes we need unconventional methods to destruct it.
 

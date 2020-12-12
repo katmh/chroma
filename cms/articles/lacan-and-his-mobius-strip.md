@@ -6,7 +6,7 @@ date: 2018-01-07T05:00:00.000Z
 path: lacan-and-his-mobius-strip
 tagline: '"Psychoanalysis has been interested in proving the paradoxical
   cohesive and hybrid nature of binary oppositions."'
-image: /assets/mobius-melinda-xu.png
+image: /assets/mobius-melinda-xu.jpg
 tags:
   - science
   - philosophy

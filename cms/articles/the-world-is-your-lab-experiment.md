@@ -7,7 +7,7 @@ path: the-world-is-your-lab-experiment
 tagline: '"Since it’s politically infeasible (and a logistical nightmare) to
   randomly choose people to, say, receive the minimum wage, economists simply
   can’t run experiments like other scientists."'
-image: /assets/instrumentalvariables-stock.png
+image: /assets/instrumentalvariables-stock.jpg
 tags:
   - culture
   - science

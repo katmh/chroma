@@ -6,7 +6,7 @@ date: 2018-01-07T05:00:00.000Z
 path: those-who-wander-mapless
 tagline: '"New Zealand was blue-green, lusher than dreams, and muggy enough to
   hint at an impending December summer."'
-image: /assets/mapless-emily-cheng.png
+image: /assets/mapless-emily-cheng.jpg
 tags:
   - culture
   - history
