@@ -58,11 +58,8 @@ module.exports = {
               variants: [`300`, `700`],
             },
             {
-              family: `Alegreya`,
-              variants: [`400`, `400i`],
-            },
-            {
               family: `Source Serif Pro`,
+              variants: [`400`, `400i`],
             },
           ],
         },

@@ -17,7 +17,7 @@ export default {
         text: "#f6ddd4",
         primary: "#ee9955",
         secondary: "#f59a9d",
-        muted: "#664455"
+        muted: "#664455",
       },
     },
   },
@@ -28,7 +28,7 @@ export default {
     heading: "Palanquin, Helvetica, sans-serif",
     monospace: "Menlo, monospace",
   },
-  fontSizes: [12, 14, 18, 20, 24, 36, 48, 64, 96],
+  fontSizes: [12, 14, 18, 20, 22, 32, 44, 64, 96],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -43,11 +43,11 @@ export default {
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "heading",
-      my: 4,
+      my: ".75em",
     },
     byline: {
-      color: transparentize("text", 0.15)
-    }
+      color: transparentize("text", 0.15),
+    },
   },
   styles: {
     root: {
@@ -105,14 +105,17 @@ export default {
       borderBottomStyle: "solid",
     },
     p: {
-      fontSize: 2
+      fontSize: 2,
+    },
+    li: {
+      fontSize: 2,
     },
     a: {
       color: "primary",
       transition: ".1s ease-in-out",
       ":hover": {
-        color: lighten("primary", 0.1)
-      }
-    }
+        color: lighten("primary", 0.1),
+      },
+    },
   },
 }

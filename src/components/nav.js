@@ -12,7 +12,7 @@ const Nav = ({ smallLogo }) => {
         display: "flex",
         justifyContent: "space-between",
         pt: "1.5rem",
-        pb: "1.25rem"
+        pb: "1.25rem",
       }}
     >
       <div
@@ -35,7 +35,6 @@ const Nav = ({ smallLogo }) => {
         {smallLogo ? <Logo width={250} /> : null}
         <Link to="/about">About</Link>
         <Link to="/articles">Articles</Link>
-        <Link to="/contact">Contact</Link>
       </div>
       <ThemeSwitcher />
     </nav>
