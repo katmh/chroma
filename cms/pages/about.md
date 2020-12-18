@@ -24,7 +24,7 @@ Chelsea Ajunwa ‘21, _Editor_
 ### Alumni
 
 - Michelle Xu ‘20, _Founding Editor-in-Chief_
-- Karina Hinojosa ‘20, _Founding Editor-in-Chief, Blog Editor_
+- Karina Hinojosa ‘20, _Editor-in-Chief, Blog Editor_
 - Rona Wang, _Web Editor_
 - Theresa Machemer ‘19, _Print Editor_
 - Alap Sahoo ‘19, _Crisis Editor_
