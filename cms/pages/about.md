@@ -15,7 +15,7 @@ If you’re interested in joining, submitting writing or art ideas, or otherwise
 
 Jennah Haque ‘21, _Editor-in-Chief_
 
-Kat Huang ‘23, _Editor-in-Chief_
+Katherine (Kat) Huang ‘23, _Editor-in-Chief_
 
 Heya Lee ‘22, _Art & Design Editor_
 
@@ -29,5 +29,6 @@ Chelsea Ajunwa ‘21, _Editor_
 - Theresa Machemer ‘19, _Print Editor_
 - Alap Sahoo ‘19, _Crisis Editor_
 - Emily Cheng ‘20, _Treasurer_
-- Van Pipitone ‘21, _Design Editor_
+- Vanessa (Van) Pipitone ‘21, _Design Editor_
 - Elina Sendonaris ‘20, _Webmaster_
+- Sarah Dohadwala ‘21, _Art Editor_
