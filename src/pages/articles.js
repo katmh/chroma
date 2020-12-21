@@ -5,7 +5,7 @@ import PageTemplate from "../templates/page-template"
 import ArticleCard from "../components/article-card"
 import SEO from "../components/seo"
 import { useState } from "react"
-import Fuse from 'fuse.js'
+import Fuse from "fuse.js"
 
 const ArticlesPage = ({ data }) => {
   const articles = data.allMarkdownRemark.edges.map(edge => edge.node)
@@ -20,35 +20,32 @@ const ArticlesPage = ({ data }) => {
   return (
     <PageTemplate>
       <SEO title="Articles" />
-        <input
-            type="text"
-            placeholder="Search..."
-            value={query}
-            onChange={onSearch}
-            sx={{
-              padding: ".4rem .5rem",
-              fontSize: 2,
-              border: "none",
-              borderBottom: "1px solid #aaa",
-              borderRadius: "0",
-              outline: "none",
-              width: "80%",
-              maxWidth: "25rem",
-              bg: "transparent",
-              mt: "2rem",
-              fontFamily: "body",
-              color: "text"
-            }}
-          />
+      <input
+        type="text"
+        placeholder="Search..."
+        value={query}
+        onChange={onSearch}
+        sx={{
+          padding: ".4rem .5rem",
+          fontSize: 2,
+          border: "none",
+          borderBottom: "1px solid #aaa",
+          borderRadius: "0",
+          outline: "none",
+          width: "80%",
+          maxWidth: "25rem",
+          bg: "transparent",
+          mt: "2rem",
+          fontFamily: "body",
+          color: "text",
+        }}
+      />
 
-        {articleResults.map(article => (
-          <ArticleCard key={article.id} node={article} horizontal />
-        ))}
+      {articleResults.map(article => (
+        <ArticleCard key={article.id} node={article} horizontal />
+      ))}
 
-        {articleResults.length == 0 ? (
-          <p>No results found :/</p>
-        ) : null}
-
+      {articleResults.length === 0 ? <p>No results found :/</p> : null}
     </PageTemplate>
   )
 }
@@ -56,8 +53,8 @@ const ArticlesPage = ({ data }) => {
 export const query = graphql`
   {
     allMarkdownRemark(
-      filter: {fields: {collection: {eq: "articles"}}},
-      sort: {fields: frontmatter___date, order: DESC}
+      filter: { fields: { collection: { eq: "articles" } } }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {

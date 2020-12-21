@@ -1,11 +1,17 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-const Container = ({ children }) => (
+const WIDTHS = {
+  thin: 700,
+  medium: 900,
+  wide: 1100,
+}
+
+const Container = ({ children, width }) => (
   <section
     sx={{
       width: "90%",
-      maxWidth: "1000px",
+      maxWidth: `${width ? WIDTHS[width] : WIDTHS.wide}px`,
       mx: "auto",
     }}
   >

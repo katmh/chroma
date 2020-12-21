@@ -8,9 +8,9 @@ export default function PageTemplate({ children, title, data }) {
   return (
     <Layout smallLogo>
       <SEO title={title} />
-      <Container>
+      <Container width="thin">
         {children}
-        <div sx={{ height: "1rem" }} />
+        <div sx={{ height: "3rem" }} />
       </Container>
     </Layout>
   )

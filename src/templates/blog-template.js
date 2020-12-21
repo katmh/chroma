@@ -17,37 +17,37 @@ export default function Template({
       <header
         sx={{
           backgroundImage: `url(${frontmatter.image})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '70vh',
-          textAlign: 'center',
-          mb: 5
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "70vh",
+          textAlign: "center",
+          mb: 5,
         }}
       >
         <div
           className="overlay"
           sx={{
-            width: '100%',
-            height: '100%',
-            background: 'rgba(0,0,0,.35)',
-            display: 'table',
+            width: "100%",
+            height: "100%",
+            background: "rgba(0,0,0,.35)",
+            display: "table",
           }}
         >
           <div
             className="overlay-content"
             sx={{
-              display: 'table-cell',
-              verticalAlign: 'bottom',
-              pb: '10vh',
-              color: '#eee'
+              display: "table-cell",
+              verticalAlign: "bottom",
+              pb: "10vh",
+              color: "#eee",
             }}
           >
             <h1
               sx={{
                 ...styles.styles.h1,
-                textShadow: '1px 1px 4px rgba(0,0,0,.3)',
-                maxWidth: '90%',
-                mx: 'auto'
+                textShadow: "1px 1px 4px rgba(0,0,0,.3)",
+                maxWidth: "90%",
+                mx: "auto",
               }}
             >
               {frontmatter.title}
@@ -55,37 +55,32 @@ export default function Template({
             <p
               sx={{
                 fontSize: 3,
-                textShadow: '1px 1px 4px rgba(0,0,0,.3)',
+                textShadow: "1px 1px 4px rgba(0,0,0,.3)",
               }}
             >
-              By <span sx={{ textTransform: 'uppercase' }}>{frontmatter.author}</span>, {frontmatter.date}
+              By{" "}
+              <span sx={{ textTransform: "uppercase" }}>
+                {frontmatter.author}
+              </span>
+              , {frontmatter.date}
             </p>
           </div>
         </div>
       </header>
-      <Container>
+      <Container width="thin">
         <div
-          className="blog-post-container"
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: html }}
           sx={{
-            width: "100%",
-            maxWidth: "700px",
-            mx: "auto"
+            ...styles.styles,
+            img: {
+              mx: "auto",
+              display: "block",
+            },
           }}
-        >
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-              sx={{
-                ...styles.styles,
-                img: {
-                  mx: 'auto',
-                  display: 'block'
-                }
-              }}
-            />
-        </div>
+        />
       </Container>
-      <Footer/>
+      <Footer />
     </Layout>
   )
 }
