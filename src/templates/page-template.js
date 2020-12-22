@@ -4,11 +4,11 @@ import Layout from "../components/layout"
 import Container from "../components/container"
 import SEO from "../components/seo"
 
-export default function PageTemplate({ children, title, data }) {
+export default function PageTemplate({ children, title, width, data }) {
   return (
     <Layout smallLogo>
       <SEO title={title} />
-      <Container width="thin">
+      <Container width={width ? width : "thin"}>
         {children}
         <div sx={{ height: "3rem" }} />
       </Container>

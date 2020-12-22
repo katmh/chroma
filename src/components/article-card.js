@@ -17,10 +17,10 @@ const ArticleCard = ({ node, horizontal }) => {
       mb: 2,
       color: "secondary",
       lineHeight: "120%",
-      transition: '0.1s ease-in-out',
-      ':hover': {
-        color: darken('secondary', 0.075)
-      }
+      transition: "0.1s ease-in-out",
+      ":hover": {
+        color: darken("secondary", 0.075),
+      },
     },
     byline: {
       color: transparentize("text", 0.15),
@@ -37,7 +37,7 @@ const ArticleCard = ({ node, horizontal }) => {
     },
     imageContainer: {
       width: "100%",
-    }
+    },
   }
 
   return (
@@ -45,39 +45,36 @@ const ArticleCard = ({ node, horizontal }) => {
       sx={{
         my: ["2rem", "3rem"],
         display: ["block", horizontal ? "grid" : "block"],
-        gridTemplateColumns: "1fr 3fr"
+        gridTemplateColumns: "1fr 3fr",
       }}
     >
       <div sx={styles.imageContainer}>
-        <Link
-          to={"/p/" + node.frontmatter.path}
-        >
-          <img 
-            src={node.frontmatter.image}
-            alt="To do"
-            sx={styles.image}
-          />
+        <Link to={"/p/" + node.frontmatter.path}>
+          <img src={node.frontmatter.image} alt="To do" sx={styles.image} />
         </Link>
       </div>
       <div
         sx={{
-          ml: [0, horizontal ?  "1.5rem" : 0]
+          ml: [0, horizontal ? "1.5rem" : 0],
         }}
       >
-        <Link
-          to={"/p/" + node.frontmatter.path}
-          sx={styles.link}
-        >
-          <h1 sx={styles.title}>
-            {node.frontmatter.title}
-          </h1>
+        <Link to={"/p/" + node.frontmatter.path} sx={styles.link}>
+          <h1 sx={styles.title}>{node.frontmatter.title}</h1>
         </Link>
         <p sx={styles.byline}>
-          By <span sx={{ textTransform: "uppercase" }}>{node.frontmatter.author}</span>, {node.frontmatter.date}
+          By{" "}
+          <span sx={{ textTransform: "uppercase" }}>
+            {node.frontmatter.author}
+          </span>
+          , {node.frontmatter.date}
         </p>
         <div
           sx={styles.excerpt}
-          dangerouslySetInnerHTML={{ __html: node.frontmatter.tagline ? node.frontmatter.tagline : node.excerpt }}
+          dangerouslySetInnerHTML={{
+            __html: node.frontmatter.tagline
+              ? node.frontmatter.tagline
+              : node.excerpt,
+          }}
         />
       </div>
     </article>

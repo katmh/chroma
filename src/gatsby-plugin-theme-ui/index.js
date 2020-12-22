@@ -28,7 +28,7 @@ export default {
     heading: "Palanquin, Helvetica, sans-serif",
     monospace: "Menlo, monospace",
   },
-  fontSizes: [12, 14, 18, 20, 22, 32, 44, 64, 96],
+  fontSizes: [12, 14, 18, 20, 24, 30, 44, 64, 96],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -43,7 +43,7 @@ export default {
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "heading",
-      my: ".75em",
+      margin: "1em 0 1rem",
     },
     byline: {
       color: transparentize("text", 0.15),
@@ -105,7 +105,7 @@ export default {
       borderBottomStyle: "solid",
     },
     p: {
-      fontSize: 2,
+      fontSize: [2, 3],
     },
     li: {
       fontSize: 2,

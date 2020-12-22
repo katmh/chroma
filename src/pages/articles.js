@@ -18,7 +18,7 @@ const ArticlesPage = ({ data }) => {
   const articleResults = query ? results.map(article => article.item) : articles
 
   return (
-    <PageTemplate>
+    <PageTemplate width="wide">
       <SEO title="Articles" />
       <input
         type="text"
