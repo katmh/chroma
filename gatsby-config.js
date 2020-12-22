@@ -59,7 +59,7 @@ module.exports = {
             },
             {
               family: `Source Serif Pro`,
-              variants: [`400`, `400i`],
+              variants: [`400`, `400i`, `700`],
             },
           ],
         },

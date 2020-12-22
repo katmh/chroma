@@ -1,4 +1,4 @@
-import { lighten, transparentize } from "@theme-ui/color"
+import { transparentize } from "@theme-ui/color"
 
 export default {
   useCustomProperties: true,
@@ -14,8 +14,8 @@ export default {
       dark: {
         // based on Horizons color palette
         background: "#332233",
-        text: "#f6ddd4",
-        primary: "#ee9955",
+        text: "#faeee9",
+        primary: "#f6a666",
         secondary: "#f59a9d",
         muted: "#664455",
       },
@@ -112,10 +112,6 @@ export default {
     },
     a: {
       color: "primary",
-      transition: ".1s ease-in-out",
-      ":hover": {
-        color: lighten("primary", 0.1),
-      },
     },
   },
 }
